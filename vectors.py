@@ -6,7 +6,7 @@ import numpy as np
 
 with open("words.txt", encoding='utf-8') as f:
     words = dict()
-    for i in range(50000):
+    for i in range(25000):
         row = next(f).split()
         word = row[0]
         vector = np.array([float(x) for x in row[1:]])
